@@ -45,7 +45,7 @@ body:
       placeholder: "**Date (Preferably in UTC / or attach your time zone)**"
       value: |
         "The error occurred at 10:45 on 03/15/2024."
-        "**My time zone:** UTC"
+        "My time zone: UTC"
     validations:
       required: true
 
@@ -76,17 +76,17 @@ body:
         Step 1: Go to Personal Chat / Group Chat / Channel / Forum (Group with multiple topics)
         Your steps:
       value: |
-        **Step 1:** Go to Personal Chat / Group Chat / Channel / Forum (Group with multiple topics)
-        **Step 2:** Give the bot Administrator rights / Administrator rights are not needed
-        **Step 3:** Run the command...
-        **Step 4:** Enter text... / Perform action... / Try using...
-        **Step 5:** Receive an Error/Additional Actions
+        Step 1: Go to Personal Chat / Group Chat / Channel / Forum (Group with multiple topics)
+        Step 2: Give the bot Administrator rights / Administrator rights are not needed
+        Step 3: Run the command...
+        Step 4: Enter text... / Perform action... / Try using...
+        Step 5: Receive an Error/Additional Actions
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: "### Additional information:"
+      label: "<< Additional information >>:"
       description: |
         "Please provide additional information so we can fix the problem faster."
         "*Not necessary.*"
