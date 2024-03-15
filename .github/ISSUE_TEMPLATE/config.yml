@@ -1,1 +1,11 @@
-
+blank_issues_enabled: false
+contact_links:
+  - name: VIA Bot in Telegram
+    url: https://t.me/VIA_by_VOLT_BOT
+    about: Our bot which you can use for completely different purposes.
+  - name: SVETA Bot in Telegram
+    url: https://t.me/VIA_by_VOLT
+    about: Our userbot which you can use for completely different purposes.
+  - name: Our Telegram channel.
+    url: https://t.me/via_by_volt_channel
+    about: Get news about the latest updates and maintenance alerts.
