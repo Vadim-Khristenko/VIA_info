@@ -26,7 +26,7 @@ body:
       value: |
         "# Please provide us with as much information as possible about the error."
 
-  - type: input
+  - type: textarea
     attributes:
       label: "Brief description of the problem"
       description: "Write here a brief description of the problem you encountered."
