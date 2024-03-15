@@ -1,0 +1,96 @@
+name: VIA bug REPORT
+description: Create a bug report about the VIA bot so we can improve it.
+title: Error in VIA operation
+labels: 
+  - BUG, 
+  - VIA BOT
+assignees: ''
+
+body: 
+  - type: checkboxes
+    attributes:
+      label: Preliminary checks
+      options:
+        - label: "I'm sure I'm not blocked in the bot"
+          required: true
+        - label: "I'm sure this is not a limitation of a single chat."
+          required: true
+        - label: "This error is permanent"
+          required: true
+        - label: "The error was not created on purpose"
+          required: true
+        - label: "I'm sure this is not an error related to lack of rights."
+          required: true
+        
+  - type: markdown
+    attributes:
+      value: |
+        "# Please provide us with as much information as possible about the error."
+
+  - type: input
+    attributes:
+      label: "# Brief description of the problem"
+      description: "Write here a brief description of the problem you encountered."
+      placeholder: |
+        "When I did... I used the command... and got an error."
+        "**Error code:**"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "## When the error occurred:"
+      description: |
+        "Specify the date when the error occurred, date format: Hour:Minutes Day. Month. Year."
+        "*If the date is specified as recently this week, etc. This is an incorrect date.*"
+      placeholder: "**Date (Preferably in UTC / or attach your time zone)**"
+      value: |
+        "The error occurred at 10:45 on 03/15/2024."
+        "**My time zone:** UTC"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "## Expected Behavior:"
+      description: |
+        "Enter what behavior you expected from the team."
+        "*Not necessary.*"
+      value: |
+        I expected what would happen... when I use the command...
+
+  - type: dropdown
+    attributes:
+      label: | 
+        "### Importance of this issue for you:"
+        **Enter from 1 to 5:**
+        "*Not necessary.*"
+      options:
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+
+  - type: textarea
+    attributes:
+      label: "## Reproduction steps:"
+      description: "How can we reproduce the error you encountered? Enter the full path from start to error."
+      placeholder: |
+        Step 1: Go to Personal Chat / Group Chat / Channel / Forum (Group with multiple topics)
+        Your steps:
+      value: |
+        **Step 1:** Go to Personal Chat / Group Chat / Channel / Forum (Group with multiple topics)
+        **Step 2:** Give the bot Administrator rights / Administrator rights are not needed
+        **Step 3:** Run the command...
+        **Step 4:** Enter text... / Perform action... / Try using...
+        **Step 5:** Receive an Error/Additional Actions
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "### Additional information:"
+      description: |
+        "Please provide additional information so we can fix the problem faster."
+        "*Not necessary.*"
