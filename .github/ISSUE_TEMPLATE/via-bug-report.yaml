@@ -4,12 +4,11 @@ title: Error in VIA operation
 labels: 
   - BUG, 
   - VIA BOT
-assignees: ''
 
 body: 
   - type: checkboxes
     attributes:
-      label: Preliminary checks
+      label: "Preliminary checks"
       options:
         - label: "I'm sure I'm not blocked in the bot"
           required: true
