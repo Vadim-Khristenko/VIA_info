@@ -28,7 +28,7 @@ body:
 
   - type: input
     attributes:
-      label: "# Brief description of the problem"
+      label: "Brief description of the problem"
       description: "Write here a brief description of the problem you encountered."
       placeholder: |
         "When I did... I used the command... and got an error."
@@ -38,20 +38,20 @@ body:
 
   - type: textarea
     attributes:
-      label: "## When the error occurred:"
+      label: "When the error occurred:"
       description: |
         "Specify the date when the error occurred, date format: Hour:Minutes Day. Month. Year."
         "*If the date is specified as recently this week, etc. This is an incorrect date.*"
       placeholder: "**Date (Preferably in UTC / or attach your time zone)**"
       value: |
         "The error occurred at 10:45 on 03/15/2024."
-        "**My time zone:** UTC"
+        "My time zone: UTC"
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: "## Expected Behavior:"
+      label: "Expected Behavior:"
       description: |
         "Enter what behavior you expected from the team."
         "*Not necessary.*"
@@ -60,10 +60,7 @@ body:
 
   - type: dropdown
     attributes:
-      label: | 
-        "### Importance of this issue for you:"
-        **Enter from 1 to 5:**
-        "*Not necessary.*"
+      label: "Importance of this issue for you: (Not necessary.)"
       options:
         - 1
         - 2
@@ -73,23 +70,23 @@ body:
 
   - type: textarea
     attributes:
-      label: "## Reproduction steps:"
+      label: "Reproduction steps:"
       description: "How can we reproduce the error you encountered? Enter the full path from start to error."
       placeholder: |
         Step 1: Go to Personal Chat / Group Chat / Channel / Forum (Group with multiple topics)
         Your steps:
       value: |
-        **Step 1:** Go to Personal Chat / Group Chat / Channel / Forum (Group with multiple topics)
-        **Step 2:** Give the bot Administrator rights / Administrator rights are not needed
-        **Step 3:** Run the command...
-        **Step 4:** Enter text... / Perform action... / Try using...
-        **Step 5:** Receive an Error/Additional Actions
+        Step 1: Go to Personal Chat / Group Chat / Channel / Forum (Group with multiple topics)
+        Step 2: Give the bot Administrator rights / Administrator rights are not needed
+        Step 3: Run the command...
+        Step 4: Enter text... / Perform action... / Try using...
+        Step 5: Receive an Error/Additional Actions
     validations:
       required: true
 
   - type: textarea
     attributes:
-      label: "### Additional information:"
+      label: "<< Additional information >>:"
       description: |
         "Please provide additional information so we can fix the problem faster."
         "*Not necessary.*"
