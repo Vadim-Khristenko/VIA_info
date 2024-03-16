@@ -13,7 +13,6 @@ body:
         - label: "I'm sure I'm not blocked in the bot"
           required: true
         - label: "I'm sure this is not a limitation of a single chat."
-          required: true
         - label: "This error is permanent"
           required: true
         - label: "The error was not created on purpose"
