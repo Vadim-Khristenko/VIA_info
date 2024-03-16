@@ -3,6 +3,6 @@
 
 This repository consists of several things.
 
-A place where you can offer us an idea.
-Report a bug.
-Ask a Question.
+- A place where you can offer us an idea.
+- Report a bug.
+- Ask a Question.
