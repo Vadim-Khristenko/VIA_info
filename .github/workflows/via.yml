@@ -1,0 +1,18 @@
+name: issues event handler
+
+on:
+  issues:
+    types: [ opened, edited ]
+
+jobs:
+  handle_issues:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Print issues data
+        run: |
+          echo "issues number: ${{ github.event.issues.number }}"
+          echo "issues state: ${{ github.event.issues.state }}"
+          echo "Repository: ${{ github.repository }}"
+          echo "issues data: ${{ github.event.issues}}"
