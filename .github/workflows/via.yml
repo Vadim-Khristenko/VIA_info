@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Print issues data
         run: |
-          echo "issues number: ${{ github.event.issues.number }}"
-          echo "issues state: ${{ github.event.issues.state }}"
+          echo "issues number: ${{ event.issues.number }}"
+          echo "issues state: ${{ event.issues.state }}"
           echo "Repository: ${{ github.repository }}"
-          echo "issues data: ${{ github.event.issues}}"
+          echo "issues data: ${{ event.issues}}"
