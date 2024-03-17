@@ -32,9 +32,9 @@ body:
         "*Follow the news and updates in our Telegram channel.*"
     
   - type: dropdown
+    descripiton: "Multiple selections are supported."
     attributes:
       label: "On which platforms do you want to add your idea?"
-      descripiton: "Multiple selections are supported."
       multiple: true
       options:
         - Telegram
