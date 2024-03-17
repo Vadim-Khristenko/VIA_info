@@ -20,6 +20,8 @@ body:
           required: true
         - label: "I'm sure that this bug is Global and it happens in all bots."
           required: true
+        - label: "I'm sure this hasn't been reported before."
+          required: true
         
   - type: markdown
     attributes:
