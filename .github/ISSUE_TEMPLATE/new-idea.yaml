@@ -28,8 +28,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        "We need you to answer a few questions here about your idea so that we can understand what you want to add."
-        "*Follow the news and updates in our Telegram channel.*"
+        We need you to answer a few questions here about your idea so that we can understand what you want to add.
+        *Follow the news and updates in our Telegram channel.*
     
   - type: dropdown
     attributes:
@@ -40,5 +40,13 @@ body:
         - Discord
         - Twitch
         - VK
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: VIA ID
+      description: "Enter your VIA Account ID so we can contact you."
+      placeholder: "My ID: 0000"
     validations:
       required: true
