@@ -19,6 +19,8 @@ body:
           required: true
         - label: "I'm sure this is not an error related to lack of rights."
           required: true
+        - label: "I'm sure this hasn't been reported before."
+          required: true
         
   - type: markdown
     attributes:
