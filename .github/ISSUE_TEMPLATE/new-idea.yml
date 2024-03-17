@@ -1,0 +1,45 @@
+name: Idea for a new feature
+description: Using this form, you can suggest to us your idea for implementation in the bot.
+title: New idea
+labels: 
+  - enhancement
+
+body: 
+  - type: checkboxes
+    attributes:
+      label: "Preliminary checks"
+      description: "Check here the items that relate to your idea."
+      options:
+        - label: "I'm sure I'm not blocked in the bot"
+          required: true
+        - label: "I'm sure this idea hasn't been proposed before"
+          required: true
+        - label: "This idea involves use in certain regions."
+        - label: "My idea has not previously been implemented or is not planned for release in the update."
+          required: true
+        - label: "I am familiar with the rules for submitting ideas."
+          required: true
+        - label: "I plan to offer updates/additions to this idea periodically."
+        - label: "My idea requires interaction with other services."
+
+  - type: markdown
+    attributes:
+      value: "## Tell us more about your idea."
+  - type: markdown
+    attributes:
+      value: |
+        "We need you to answer a few questions here about your idea so that we can understand what you want to add."
+        "*Follow the news and updates in our Telegram channel.*"
+    
+  - type: dropdown
+    attributes:
+      label: "On which platforms do you want to add your idea?"
+      descripiton: "Multiple selections are supported."
+      multiple: true
+      options:
+        - Telegram
+        - Discord
+        - Twitch
+        - VK
+    validations:
+      required: true
