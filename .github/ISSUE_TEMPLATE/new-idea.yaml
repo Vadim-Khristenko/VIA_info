@@ -45,8 +45,40 @@ body:
 
   - type: input
     attributes:
-      label: VIA ID
-      description: "Enter your VIA Account ID so we can contact you."
-      placeholder: "My ID: 0000"
+      label: "Your Telegram ID / VIA ID"
+      description: "Share your Telegram ID or VIA_ID so we can contact you if we would like to discuss the idea in more detail."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "If you have an example of implementing this idea in Python or Cython, write here."
+      description: "How do you trigger this bug? Please walk us through it step by step."
+      placeholder: |
+        from ... import ...
+
+        async def main():
+          # Something
+      render: python
+  - type: markdown
+    attributes:
+      value: |
+        If the code of your idea is written in another programming language, then it’s okay, we support any other programming language listed below!
+        But the main thing is that your code can accept data in JSON format; if this is not the case, then unfortunately the example of your idea is not suitable. 
+        Kotlin
+        C++
+        JS / TS
+
+  - type: textarea
+    attributes:
+      label: "What will your idea contribute?"
+      description: "Please share information about what new features your idea will bring and why it is needed."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Tell us about your idea."
+      description: "Describe how your idea should work and what it should bring as a result."
     validations:
       required: true
